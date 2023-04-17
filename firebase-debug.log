@@ -1,0 +1,66 @@
+[debug] [2023-04-16T05:22:17.738Z] ----------------------------------------------------------------------
+[debug] [2023-04-16T05:22:17.740Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2023-04-16T05:22:17.741Z] CLI Version:   11.27.0
+[debug] [2023-04-16T05:22:17.741Z] Platform:      darwin
+[debug] [2023-04-16T05:22:17.741Z] Node Version:  v16.15.0
+[debug] [2023-04-16T05:22:17.742Z] Time:          Sun Apr 16 2023 01:22:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-16T05:22:17.742Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-16T05:22:17.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-16T05:22:17.822Z] > authorizing via signed-in user (asialakaygrady@gmail.com)
+[debug] [2023-04-16T05:22:17.822Z] [iam] checking project she-connect-app for permissions ["firebase.projects.get"]
+[debug] [2023-04-16T05:22:17.824Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/she-connect-app:testIamPermissions [none]
+[debug] [2023-04-16T05:22:17.824Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/she-connect-app:testIamPermissions x-goog-quota-user=projects/she-connect-app
+[debug] [2023-04-16T05:22:17.824Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/she-connect-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-16T05:22:18.087Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/she-connect-app:testIamPermissions 200
+[debug] [2023-04-16T05:22:18.088Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/she-connect-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-16T05:22:18.089Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app [none]
+[debug] [2023-04-16T05:22:18.378Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app 200
+[debug] [2023-04-16T05:22:18.378Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app {"projectId":"she-connect-app","projectNumber":"703554312814","displayName":"she-connect-app","name":"projects/she-connect-app","resources":{"hostingSite":"she-connect-app","realtimeDatabaseInstance":"she-connect-app-default-rtdb","storageBucket":"she-connect-app.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_c4b3478e-cde7-43b8-8fb1-38d5101a5dfc"}
+[info] 
+[info] === Serving from '/Users/asialakaygradyloves/apps/sheconnect'...
+[info] 
+[debug] [2023-04-16T05:22:18.386Z] defaultcredentials: writing to file /Users/asialakaygradyloves/.config/firebase/asialakaygrady_gmail_com_application_default_credentials.json
+[debug] [2023-04-16T05:22:18.387Z] Setting GAC to /Users/asialakaygradyloves/.config/firebase/asialakaygrady_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/asialakaygradyloves/.config/firebase/asialakaygrady_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-16T05:22:18.388Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app/adminSdkConfig [none]
+[debug] [2023-04-16T05:22:18.697Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app/adminSdkConfig 200
+[debug] [2023-04-16T05:22:18.697Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/she-connect-app/adminSdkConfig {"projectId":"she-connect-app","databaseURL":"https://she-connect-app-default-rtdb.firebaseio.com","storageBucket":"she-connect-app.appspot.com","locationId":"us-central"}
+[info] i  functions: Watching "/Users/asialakaygradyloves/apps/sheconnect/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/asialakaygradyloves/apps/sheconnect/functions\" for Cloud Functions..."}}
+[debug] [2023-04-16T05:22:18.732Z] Validating nodejs source
+[debug] [2023-04-16T05:22:19.867Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-16T05:22:19.868Z] Building nodejs source
+[debug] [2023-04-16T05:22:19.868Z] Failed to find version of module node: reached end of search path /Users/asialakaygradyloves/apps/sheconnect/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-16T05:22:19.872Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-16T05:22:19.881Z] Found firebase-functions binary at '/Users/asialakaygradyloves/apps/sheconnect/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-16T05:22:20.421Z] Serving at port 8031
+
+[debug] [2023-04-16T05:22:20.809Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-04-16T05:22:20.813Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}

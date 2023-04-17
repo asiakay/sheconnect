@@ -1,0 +1,39 @@
+.footerContainer {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.footerlogo {
+  width: 100px;
+  height: auto;
+}
+
+.socialMediaLinks {
+  display: flex;
+  list-style: none;
+}
+
+.socialMediaLinksLI {
+  margin: 0 10px;
+}
+
+.socialMediaLinksLI a {
+  color: #000000;
+  font-size: 18px;
+}
+
+.socialMediaLinksLI a:hover {
+  color: #f9a3a3;
+}
+
+.footerDiv p {
+  font-size: 14px;
+  color: #000000;
+}

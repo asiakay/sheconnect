@@ -1,0 +1,54 @@
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 70px;
+  padding: 20px;
+}
+
+.navlogo {
+  width: 100px;
+  height: auto;
+}
+
+.searchform {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.searchform button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.searchform button i {
+  color: #000000;
+  font-size: 18px;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+
+.navlink {
+  margin: 0 10px;
+}
+
+.navlink a {
+  color: #000000;
+  font-size: 18px;
+}
+
+.navlink a:hover {
+  color: #f9a3a3;
+}

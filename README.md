@@ -11,7 +11,8 @@ SheConnect is a progressive web application that connects women from different b
 
 ## Features
 
-- User authentication and profile creation
+- User authentication
+- Profile creation
 - Location-based connection matching
 - Private messaging system
 - Search functionality based on location and interests
@@ -39,3 +40,7 @@ Contributions to SheConnect are welcome and encouraged! If you would like to con
 ## License
 
 SheConnect is licensed under the MIT License. See `LICENSE` for more information.
+
+## Useful Resources
+
+[Firebase Realtime Database Quickstart](https://github.com/firebase/quickstart-js/blob/master/database/README.md)

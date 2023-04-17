@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "she-connect-app",
+    "staging": "she-connect-app"
+  },
+  "targets": {},
+  "etags": {}
+}
